@@ -1,25 +1,30 @@
 # GPT From Scratch
 
+[![Python](https://img.shields.io/badge/Python-3.11+-green.svg?logo=python&logoColor=white)](https://www.python.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg?logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-Supported-red.svg?logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 A lightweight implementation of a **GPT-style Decoder-Only Transformer** built completely from scratch using **PyTorch**. This project demonstrates the complete workflow of training and generating text using a Transformer architecture without relying on any pre-trained models or external APIs.
 
 ---
 
-## Features
+# Features
 
-* Decoder-Only GPT Architecture
-* Character-Level Tokenizer
-* Multi-Head Self-Attention
-* Transformer Decoder Blocks
-* Feed Forward Network
-* Positional Embeddings
-* Autoregressive Text Generation
-* Checkpoint Saving & Loading
-* Modular Project Structure
-* Streamlit Web Interface
+- Decoder-Only GPT Architecture
+- Character-Level Tokenizer
+- Multi-Head Self-Attention
+- Transformer Decoder Blocks
+- Feed Forward Network
+- Positional Embeddings
+- Autoregressive Text Generation
+- Checkpoint Saving & Loading
+- Streamlit Web Interface
+- Modular Project Structure
 
 ---
 
-## System Architecture
+# System Architecture
 
 ```mermaid
 flowchart LR
@@ -54,7 +59,7 @@ P --> Q["Generated Text"]
 
 ---
 
-## Workflow
+# Workflow
 
 ```text
 Input Dataset
@@ -69,7 +74,10 @@ Train / Validation Split
 Mini Batch Generation
       │
       ▼
-Embedding Layer
+Token Embedding
+      │
+      ▼
+Position Embedding
       │
       ▼
 Transformer Decoder
@@ -91,18 +99,21 @@ Backpropagation
 AdamW Optimizer
       │
       ▼
-Save Checkpoint
+Checkpoint Saved
       │
       ▼
-Load Model
+Load Trained Model
       │
       ▼
-Generate Text
+Generate Next Character
+      │
+      ▼
+Generated Text
 ```
 
 ---
 
-## Project Structure
+# Project Structure
 
 ```text
 GPT-From-Scratch/
@@ -136,12 +147,12 @@ GPT-From-Scratch/
 
 ---
 
-## Installation
+# Installation
 
 Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/GPT-From-Scratch.git
+git clone https://github.com/sourabhvamdevan/GPT-From-Scratch.git
 cd GPT-From-Scratch
 ```
 
@@ -153,9 +164,9 @@ pip install -r requirements.txt
 
 ---
 
-## Dataset
+# Dataset
 
-Download the Tiny Shakespeare dataset and place it inside
+Download the **Tiny Shakespeare** dataset and place it inside
 
 ```text
 data/input.txt
@@ -163,13 +174,13 @@ data/input.txt
 
 ---
 
-## Train the Model
+# Train the Model
 
 ```bash
 python train.py
 ```
 
-The trained model will be stored in
+The trained model will be saved in
 
 ```text
 checkpoints/latest.pt
@@ -177,13 +188,13 @@ checkpoints/latest.pt
 
 ---
 
-## Generate Text
+# Generate Text
 
 ```bash
 python generate.py
 ```
 
-The generated output will be saved in
+Generated output is stored in
 
 ```text
 outputs/generated.txt
@@ -191,7 +202,7 @@ outputs/generated.txt
 
 ---
 
-## Run the Web Application
+# Run the Streamlit Application
 
 ```bash
 streamlit run app.py
@@ -201,33 +212,39 @@ Open the displayed local URL in your browser to interact with the model.
 
 ---
 
-## Technologies Used
+# Technologies Used
 
-* Python
-* PyTorch
-* Streamlit
-
----
-
-## Future Enhancements
-
-* Byte Pair Encoding (BPE) Tokenizer
-* Top-k Sampling
-* Top-p Sampling
-* Temperature Control
-* Mixed Precision Training
-* TensorBoard Integration
-* Perplexity Evaluation
-* Flash Attention
-* KV Cache
-* Beam Search
+- Python
+- PyTorch
+- Streamlit
 
 ---
 
-## Author
+# Future Improvements
+
+- Byte Pair Encoding (BPE)
+- Top-k Sampling
+- Top-p Sampling
+- Temperature Sampling
+- Mixed Precision Training
+- TensorBoard Integration
+- Perplexity Evaluation
+- Flash Attention
+- KV Cache
+
+---
+
+# Author
 
 **Sourabh Vamdevan**
 
+Final Year Undergraduate  
 
 
-Interested in Machine Learning, Deep Learning, Natural Language Processing, Large Language Models, and Generative AI.
+Interested in Machine Learning, Deep Learning, Natural Language Processing, Large Language Models and Generative AI.
+
+---
+
+# License
+
+This project is licensed under the MIT License.
