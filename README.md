@@ -8,6 +8,11 @@
 A lightweight implementation of a **GPT-style Decoder-Only Transformer** built completely from scratch using **PyTorch**. This project demonstrates the complete workflow of training and generating text using a Transformer architecture without relying on any pre-trained models or external APIs.
 
 ---
+# Demo
+
+https://transformer-gpt-project-571.streamlit.app/
+
+---
 
 # Features
 
