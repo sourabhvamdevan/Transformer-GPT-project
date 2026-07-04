@@ -238,10 +238,6 @@ Open the displayed local URL in your browser to interact with the model.
 
 **Sourabh Vamdevan**
 
-Final Year Undergraduate  
-
-
-Interested in Machine Learning, Deep Learning, Natural Language Processing, Large Language Models and Generative AI.
 
 ---
 
